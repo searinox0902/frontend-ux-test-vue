@@ -1,0 +1,11 @@
+.header {
+  @apply bg-white shadow border-gray-400;
+}
+
+.header__wrap {
+  @apply flex justify-between items-center container h-[50px] mx-auto;
+}
+
+.header__link {
+  @apply text-primary-500 hover:text-primary-600 font-bold;
+}
