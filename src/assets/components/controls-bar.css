@@ -3,7 +3,7 @@
 }
 
 .controls-avatar {
-  @apply flex gap-4 justify-center w-full items-center;
+  @apply flex gap-4 justify-center sm:justify-start w-full items-center;
 }
 
 .controls-avatar > figure {

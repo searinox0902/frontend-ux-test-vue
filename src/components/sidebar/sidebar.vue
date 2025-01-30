@@ -36,7 +36,7 @@ const handleDeleteEvent = (eventId: any) => {
       Eventos: <span class="text-primary-500"> {{ selectedDateId }} </span>
     </h2>
     <br />
-    isEditMode : {{ isEditMode }}
+
     <div class="schedule-wrap space-y-3">
       <ScheduleItem
         v-for="(item, index) in eventDaySelectedCollecccion"

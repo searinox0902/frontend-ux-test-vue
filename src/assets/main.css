@@ -8,11 +8,20 @@
 
 /** fonts **/
 
-.font-header {
+.font-header,
+h1,
+h2,
+h3,
+h4,
+button {
   font-family: 'Roboto', serif;
+  @apply font-bold;
 }
 
-.font-body {
+.font-body,
+p,
+a,
+span {
   font-family: 'Nunito', serif;
 }
 
