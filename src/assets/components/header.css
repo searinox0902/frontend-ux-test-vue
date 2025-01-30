@@ -3,7 +3,7 @@
 }
 
 .header__wrap {
-  @apply flex justify-between items-center container h-[50px] mx-auto;
+  @apply flex justify-between items-center container py-4 px-5 md:h-[50px] mx-auto bg-clip-border;
 }
 
 .header__link {

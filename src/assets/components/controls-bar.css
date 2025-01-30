@@ -1,0 +1,15 @@
+.controls-bar {
+  @apply py-6 px-6 gap-4 md:px-0 flex flex-col md:flex-row;
+}
+
+.controls-avatar {
+  @apply flex gap-4 justify-center w-full items-center;
+}
+
+.controls-avatar > figure {
+  clip-path: border-box;
+}
+
+.controls-options {
+  @apply flex items-center gap-8;
+}
