@@ -31,13 +31,13 @@ const handleDeleteEvent = (eventId: any) => {
 </script>
 
 <template>
-  <div class="sidebar w-full space-y-6">
+  <div class="sidebar w-full space-y-6 flex flex-col">
     <h2 class="text-2xl font-bold mb-4">
       Eventos: <span class="text-primary-500"> {{ selectedDateId }} </span>
     </h2>
     <br />
 
-    <div class="schedule-wrap space-y-3">
+    <div class="schedule-wrap space-y-3" v-if="eventDaySelectedCollecccion.length > 0">
       <ScheduleItem
         v-for="(item, index) in eventDaySelectedCollecccion"
         :key="index"
@@ -47,6 +47,9 @@ const handleDeleteEvent = (eventId: any) => {
         @delete="handleDeleteEvent"
         @isEdit="handleIsEdit"
       />
+    </div>
+    <div v-else class="flex-1">
+      <p class="text-gray-400">No hay eventos asignados para este día</p>
     </div>
 
     <div>
